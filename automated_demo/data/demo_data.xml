@@ -1,0 +1,31 @@
+<odoo>
+    <data>
+        <record id="automated_demo.demo_action" model="ir.cron">
+            <field name="name">Demo Automated</field>
+            <field name="model_id" ref="model_automated_demo"/>
+            <field name="state">code</field>
+            <field name="code">model.automate('2017-12-5')</field>
+            <field name="interval_number">1</field>
+            <!-- <field name="interval_type">days</field> -->
+            <field name="interval_type">minutes</field>
+            <field name="numbercall">-1</field>
+        </record>
+        
+        <record id="one" model="automated.demo">
+            <field name="name">One</field>
+            <field name="expire_date">12-20-2017</field>
+            <field name="alert">False</field>
+        </record>
+        <record id="two" model="automated.demo">
+            <field name="name">Two</field>
+            <field name="expire_date">12-11-2017</field>
+            <field name="alert">False</field>
+        </record>
+        <record id="three" model="automated.demo">
+            <field name="name">Three</field>
+            <field name="expire_date">11-25-2017</field>
+            <field name="alert">False</field>
+        </record>
+        
+    </data>
+</odoo>

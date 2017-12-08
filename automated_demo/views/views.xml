@@ -7,8 +7,8 @@
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <field name="expire_date"/>
+          <field name="alert"/>
         </tree>
       </field>
     </record>
