@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="automated_demo.list">
+      <field name="name">automated_demo list</field>
+      <field name="model">automated.demo</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+   
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="automated_demo.action_window">
+      <field name="name">automated_demo window</field>
+      <field name="res_model">automated.demo</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+   
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="automated_demo.action_server">
+      <field name="name">automated_demo server</field>
+      <field name="model_id" ref="model_automated_demo_automated_demo"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    
+    <menuitem name="automated_demo" id="automated_demo.menu_root"/>
+   
+    <!-- menu categories -->
+    
+    <menuitem name="Menu 1" id="automated_demo.menu_1" parent="automated_demo.menu_root"
+              action="automated_demo.action_window" />
+    <!-- <menuitem name="Menu 2" id="automated_demo.menu_2" parent="automated_demo.menu_root"/> -->
+   
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="automated_demo.menu_1_list" parent="automated_demo.menu_1"
+              action="automated_demo.action_window"/>
+    <menuitem name="Server to list" id="automated_demo" parent="automated_demo.menu_2"
+              action="automated_demo.action_server"/>
+    -->
+  </data>
+</odoo>

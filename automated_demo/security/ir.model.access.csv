@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_automated_demo_automated_demo,automated_demo.automated_demo,model_automated_demo_automated_demo,,1,0,0,0

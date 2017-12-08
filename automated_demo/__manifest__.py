@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "automated_action",
+    'name': "automated_demo",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -10,7 +10,7 @@
         Long description of module's purpose
     """,
 
-    'author': "My Company",
+    'author': "Pichchanok Nuchpan",
     'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
@@ -25,7 +25,7 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'data/ir_cron.xml'
+        'data/ir_cron.xml',
+        'views/views.xml'
     ]
 }
