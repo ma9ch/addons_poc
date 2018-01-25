@@ -1,0 +1,13 @@
+## stored = True
+### เก็บข้อมูลลง db ในกรณีที่เป็น compute โดย default จะเป็น stored = False
+
+## translate
+###  string=_('string') == translate = True
+
+## unicode
+- ใน python2 อักษรถูกเก็บในรูปของ ASCII ส่วนอักษรที่ไม่ใช่อักษร ASCII ถูกเก็บในรูปของรหัสยูนิโค้ด utf-8 
+- ใน python3 จะใช้เป็น utf-8
+- ใน python2 สามารถทำให้เป็น unicode ได้ด้วยวิธี u'string' และต้องใส่ # -*- coding: utf-8 -*- ไว้ที่ด้านบนสุดทุกครั้งเพื่อระบุว่าจะใช้การถอดรหัสแบบ utf-8
+
+
+
